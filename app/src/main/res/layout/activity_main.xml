@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
+<!--Team A-->
 
     <TextView
         android:id="@+id/team_a"
@@ -24,8 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:gravity="center"
-        android:text="0
-"
+        android:text="0"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,28 +39,87 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:onClick="addThreeforTeamA"
         android:text="+3 points"
         app:layout_constraintTop_toBottomOf="@+id/team_a_score"
-        tools:layout_editor_absoluteX="161dp"
-        android:onClick="addThreeforTeamA" />
+        tools:layout_editor_absoluteX="161dp" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:onClick="addTwoforTeamA"
         android:text="+2 Points"
         app:layout_constraintTop_toBottomOf="@+id/button1"
-        tools:layout_editor_absoluteX="166dp"
-        android:onClick="addTwoforTeamA" />
+        tools:layout_editor_absoluteX="166dp" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:onClick="addOneForTeamA"
         android:text="Free throw"
         app:layout_constraintTop_toBottomOf="@+id/button2"
-        tools:layout_editor_absoluteX="166dp"
-        android:onClick="addOneForTeamA"/>
+        tools:layout_editor_absoluteX="166dp" />
+
+
+    <!--Team B-->
+
+    <TextView
+        android:id="@+id/team_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Team B"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <TextView
+        android:id="@+id/team_b_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team_b" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="addThreeforTeamB"
+        android:text="+3 points"
+        app:layout_constraintTop_toBottomOf="@+id/team_b_score"
+        tools:layout_editor_absoluteX="50dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="addTwoforTeamB"
+        android:text="+2 Points"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        tools:layout_editor_absoluteX="50dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="addOneForTeamB"
+        android:text="Free throw"
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        tools:layout_editor_absoluteX="50dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
